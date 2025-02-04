@@ -8,23 +8,7 @@ export const Hero = () => {
     <div className="relative isolate min-h-[80vh] flex items-center bg-white">
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 to-white" />
       
-      <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-20">
-        {/* Social Proof Bar */}
-        <div className="border-b border-gray-100 pb-6 mb-12">
-          <div className="flex flex-wrap justify-center sm:justify-between items-center gap-8">
-            {[
-              ['5,000+', 'Active Users'],
-              ['€2M+', 'Tax Managed'],
-              ['4.9/5', 'User Rating'],
-            ].map(([stat, label]) => (
-              <div key={label} className="flex items-center gap-2">
-                <span className="text-lg font-semibold text-primary">{stat}</span>
-                <span className="text-sm text-gray-500">{label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
+      <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-20 flex flex-col lg:flex-row lg:items-center lg:gap-x-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
           <Badge className="mb-6 sm:mb-8 rounded-full px-4 py-2 text-sm font-medium bg-primary/5 text-primary hover:bg-primary/10 cursor-pointer">
             Early Access Now Open
@@ -47,6 +31,21 @@ export const Hero = () => {
             <Button variant="ghost" size="lg" className="w-full sm:w-auto rounded-full">
               See How It Works
             </Button>
+          </div>
+
+          <div className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-x-8">
+            {[
+              ['5,000+', 'Active Users'],
+              ['€2M+', 'Tax Managed'],
+              ['4.9/5', 'User Rating'],
+            ].map(([stat, label]) => (
+              <div key={label} className="flex flex-col items-center sm:items-start">
+                <div className="text-2xl sm:text-3xl font-medium tracking-tight text-gray-900">
+                  {stat}
+                </div>
+                <div className="text-sm text-gray-500">{label}</div>
+              </div>
+            ))}
           </div>
         </div>
 
