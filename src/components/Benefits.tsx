@@ -31,29 +31,29 @@ export const Benefits = () => {
   ];
 
   return (
-    <div className="py-16 sm:py-20 bg-white">
-      <div className="container mx-auto px-6">
+    <div className="py-12 sm:py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Everything You Need to Manage Your Taxes
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-8 text-gray-600">
             Purpose-built for Dutch freelancers, ZZPay combines powerful tax automation with intuitive design.
           </p>
         </div>
 
-        <div className="mx-auto mt-16 max-w-7xl">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-12 sm:mt-16 max-w-7xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {benefits.map((benefit) => (
               <Card key={benefit.name} className="bg-white border-none shadow-none">
                 <CardContent className="pt-6">
                   <div className={`rounded-2xl p-2 w-12 h-12 flex items-center justify-center ${benefit.color}`}>
                     <benefit.icon className="h-6 w-6" />
                   </div>
-                  <h3 className="mt-6 text-lg font-semibold text-gray-900">
+                  <h3 className="mt-4 text-lg font-semibold text-gray-900">
                     {benefit.name}
                   </h3>
-                  <p className="mt-2 text-gray-600">
+                  <p className="mt-2 text-sm sm:text-base text-gray-600">
                     {benefit.description}
                   </p>
                 </CardContent>
