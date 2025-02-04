@@ -56,7 +56,7 @@ export const Hero = () => {
         <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow relative">
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
               alt="Dashboard Preview"
               className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl rounded-2xl"
             />
