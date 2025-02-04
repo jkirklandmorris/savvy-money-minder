@@ -53,12 +53,30 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-          <img
-            src="/api/placeholder/600/500"
-            alt="Dashboard Preview"
-            className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl rounded-2xl"
-          />
+        <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow relative">
+          <div className="relative">
+            <img
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+              alt="Dashboard Preview"
+              className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl rounded-2xl"
+            />
+            {/* Callout overlays */}
+            <div className="absolute -left-4 top-4 bg-white p-3 rounded-lg shadow-lg text-sm border border-primary/10">
+              <span className="text-primary font-semibold">Monthly Tax Bucket</span>
+              <br />
+              €2,450 saved
+            </div>
+            <div className="absolute -right-4 top-1/2 bg-white p-3 rounded-lg shadow-lg text-sm border border-primary/10">
+              <span className="text-primary font-semibold">Auto-Split</span>
+              <br />
+              21% BTW → Monthly
+            </div>
+            <div className="absolute -left-4 bottom-4 bg-white p-3 rounded-lg shadow-lg text-sm border border-primary/10">
+              <span className="text-primary font-semibold">Safe to Spend</span>
+              <br />
+              €3,780 available
+            </div>
+          </div>
         </div>
       </div>
     </div>
