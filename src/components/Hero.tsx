@@ -5,9 +5,9 @@ import { Badge } from "@/components/ui/badge";
 
 export const Hero = () => {
   return (
-    <div className="relative isolate min-h-[80vh] flex items-center bg-white">
-      {/* Subtle gradient background with reduced spacing */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50/80 to-white" />
+    <div className="relative isolate min-h-[90vh] flex items-center bg-white">
+      {/* Subtle gradient background */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 to-white" />
       
       <div className="container mx-auto px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
