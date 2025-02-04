@@ -5,11 +5,10 @@ import { Badge } from "@/components/ui/badge";
 
 export const Hero = () => {
   return (
-    <div className="relative isolate min-h-[90vh] flex items-center bg-white">
-      {/* Subtle gradient background */}
+    <div className="relative isolate min-h-[80vh] flex items-center bg-white">
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 to-white" />
       
-      <div className="container mx-auto px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10">
+      <div className="container mx-auto px-6 py-16 sm:py-20 lg:flex lg:items-center lg:gap-x-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
           <Badge className="mb-8 rounded-full px-4 py-2 text-sm font-medium bg-primary/5 text-primary hover:bg-primary/10 cursor-pointer">
             Early Access Now Open
